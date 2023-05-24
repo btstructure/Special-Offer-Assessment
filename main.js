@@ -5,11 +5,28 @@ document.getElementById("form").addEventListener("submit", function (e) {
   let email = document.getElementById("email").value;
   let handle = document.getElementById("handle").value;
 
+  // Email validation regex pattern
+  // let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // if (!emailRegex.test(email)) {
+  //   alert("Please enter a valid email address.");
+  //   return;
+  // }
+
+  // let storedData = JSON.parse(localStorage.getItem(email));
+
+  // if (storedData) {
+  //   alert("Email already taken. Please use a different email.");
+  //   return;
+  // }
+
   let formData = {
     name: name,
     email: email,
     handle: handle,
   };
+
+  // localStorage.setItem(email, JSON.stringify(formData))
 
   // Hide the form, submit button, h1, h2, background-image, and p
   let container = document.querySelector(".container");
